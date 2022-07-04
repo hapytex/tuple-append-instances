@@ -1,7 +1,9 @@
 name:                tuple-append-instances
 version:             0.1.0.0
--- synopsis:
--- description:
+synopsis:            Extra instances for the typeclasses in the tuple-append package
+description:
+  A package that defines typeclass instances for the typeclasses defined in the tuple-append package. It defines instances for data types defined in the bytestring, dlist, text and vector package.
+
 homepage:            https://github.com/hapytex/tuple-append-instances#readme
 license:             BSD3
 license-file:        LICENSE
