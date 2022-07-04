@@ -1,6 +1,16 @@
 {-# LANGUAGE FlexibleInstances, MultiParamTypeClasses #-}
 {-# OPTIONS_GHC -Wall -fno-warn-orphans -Werror #-}
 
+{-|
+Module      : Data.Tuple.Append.Instances.Text
+Description : A module that contains typeclasses instances for the text package.
+Maintainer  : hapytexeu+gh@gmail.com
+Stability   : experimental
+Portability : POSIX
+
+A module that contains typeclasses instances for the 'Text', lazy 'TL.Text' and 'Stream' data types.
+-}
+
 module Data.Tuple.Append.Instances.Text () where
 
 import Data.Text(Text, append, cons, snoc)
