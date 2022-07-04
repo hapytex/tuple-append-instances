@@ -16,7 +16,8 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:
-      Data.Tuple.Append.Instances.DList
+      Data.Tuple.Append.Instances.ByteString
+    , Data.Tuple.Append.Instances.DList
     , Data.Tuple.Append.Instances.Text
     , Data.Tuple.Append.Instances.Vector
   build-depends:
