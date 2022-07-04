@@ -2,7 +2,7 @@
 {-# OPTIONS_GHC -Wall -fno-warn-orphans -Werror #-}
 
 {-|
-Module      : Data.Tuple.Append.Instances.Text
+Module      : Data.Tuple.Append.Instances.Vector
 Description : A module that contains typeclasses instances for the vector package.
 Maintainer  : hapytexeu+gh@gmail.com
 Stability   : experimental

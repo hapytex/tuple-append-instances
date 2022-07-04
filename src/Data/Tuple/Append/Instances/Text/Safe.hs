@@ -2,7 +2,7 @@
 {-# OPTIONS_GHC -Wall -fno-warn-orphans -Werror #-}
 
 {-|
-Module      : Data.Tuple.Append.Instances.Text
+Module      : Data.Tuple.Append.Instances.Text.Safe
 Description : A module that contains typeclasses instances for the safe modules of the text package.
 Maintainer  : hapytexeu+gh@gmail.com
 Stability   : experimental
