@@ -1,4 +1,5 @@
 {-# LANGUAGE FlexibleInstances, MultiParamTypeClasses #-}
+{-# OPTIONS_GHC -Wall -fno-warn-orphans -Werror #-}
 
 module Data.Tuple.Append.Instances.Text () where
 
