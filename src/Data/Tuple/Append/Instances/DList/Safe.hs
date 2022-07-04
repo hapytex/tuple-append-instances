@@ -1,4 +1,4 @@
-{-# LANGUAGE FlexibleInstances, MultiParamTypeClasses, Safe #-}
+{-# LANGUAGE CPP, FlexibleInstances, MultiParamTypeClasses, Safe #-}
 {-# OPTIONS_GHC -Wall -fno-warn-orphans -Werror #-}
 
 {-|
