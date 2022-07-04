@@ -14,8 +14,10 @@ A module that contains typeclasses instances for the 'DList', and 'DNonEmpty' da
 module Data.Tuple.Append.Instances.DList.Safe () where
 
 import Data.DList(DList, append, cons, snoc)
+#if MIN_VERSION_dlist(1,0,0)
 import Data.DList.DNonEmpty(DNonEmpty)
 import qualified Data.DList.DNonEmpty as DN(append, cons, snoc)
+#endif
 import Data.Tuple.Append.Class(TupleAddL((<++)), TupleAddR((++>)), TupleAppend((+++)))
 
 instance TupleAddL a (DList a) (DList a) where
@@ -27,6 +29,7 @@ instance TupleAddR (DList a) a (DList a) where
 instance TupleAppend (DList a) (DList a) (DList a) where
   (+++) = append
 
+#if MIN_VERSION_dlist(1,0,0)
 instance TupleAddL a (DNonEmpty a) (DNonEmpty a) where
   (<++) = DN.cons
 
@@ -35,3 +38,4 @@ instance TupleAddR (DNonEmpty a) a (DNonEmpty a) where
 
 instance TupleAppend (DNonEmpty a) (DNonEmpty a) (DNonEmpty a) where
   (+++) = DN.append
+#endif
